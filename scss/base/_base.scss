@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+body {
+  font-family: $font-main;
+  background-color: $white;
+  color: $black;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+a {
+  color: $white;
+  transition: filter 0.2s ease-in;
+
+  &:hover {
+    filter: saturate(1.5);
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0px $container-padding;
+  max-width: $container-width + ($container-padding * 2);
+}
