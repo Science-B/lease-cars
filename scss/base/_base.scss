@@ -8,6 +8,12 @@ body {
   font-weight: 400;
 }
 
+// Прибитие footer к низу
+html,
+body {
+  height: 100%;
+}
+
 a {
   color: $white;
   transition: filter 0.2s ease-in;
@@ -17,8 +23,19 @@ a {
   }
 }
 
+// Прибитие footer к низу
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   margin: 0 auto;
   padding: 0px $container-padding;
   max-width: $container-width + ($container-padding * 2);
+}
+
+.none {
+  display: none !important;
 }
