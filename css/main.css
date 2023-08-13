@@ -115,6 +115,11 @@ body {
   font-weight: 400;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 a {
   color: #ffffff;
   transition: filter 0.2s ease-in;
@@ -123,10 +128,20 @@ a:hover {
   filter: saturate(1.5);
 }
 
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .container {
   margin: 0 auto;
   padding: 0px 15px;
   max-width: 1230px;
+}
+
+.none {
+  display: none !important;
 }
 
 .header {
@@ -146,4 +161,59 @@ a:hover {
 .menu__list {
   display: flex;
   gap: 35px;
+}
+
+.footer {
+  padding: 50px 0px 15px 0px;
+  background-color: #151515;
+  color: #ffffff;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.footer__menu-list {
+  max-width: 225px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__menu-title {
+  margin-bottom: 20px;
+}
+
+.footer__apps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.footer__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.footer__text p {
+  font-size: 12px;
+  text-align: center;
+  max-width: 806px;
+}
+
+.footer__privacy-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.main {
+  flex-grow: 1;
 }/*# sourceMappingURL=main.css.map */
