@@ -1,17 +1,45 @@
 .header {
+  position: relative;
   background-color: $black;
 
   &--main {
     background-color: transparent;
+
+    .header__top {
+      position: absolute;
+      z-index: 9;
+      right: 0;
+      left: 0;
+    }
+
+    .header__main {
+      position: absolute;
+      z-index: 9;
+      left: 0;
+      right: 0;
+      padding-top: 247px;
+    }
   }
 }
 
 .header__top {
-  padding: 45px 0px 40px 0px;
+  padding: 40px 0px 152px 0px;
+}
+
+.header__row {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.header__logo {
+.header__main {
+  padding-top: 247px;
+  text-align: center;
+}
+
+.header__title {
+  font-size: 96px;
+  font-weight: 700;
+  color: $white;
+  padding-bottom: 50px;
 }
