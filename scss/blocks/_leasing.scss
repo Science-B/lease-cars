@@ -1,0 +1,61 @@
+.leasing {
+  padding-bottom: 150px;
+}
+
+.leasing__wrapper {
+  max-width: 594px;
+  margin: 0 auto;
+}
+
+.leasing__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.leasing__text {
+  line-height: 130%;
+  margin-bottom: 50px;
+}
+
+.leasing__rules {
+}
+
+.lasing__rules-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.leasing__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.leasing__rule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+}
+
+.leasing__rule-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100px;
+  width: 100%;
+  height: 100px;
+  border-radius: 50%;
+  font-size: 48px;
+  font-weight: 700;
+  background-color: $blue;
+  color: $white;
+}
+
+.leasing__rule-text {
+  line-height: 130%;
+}

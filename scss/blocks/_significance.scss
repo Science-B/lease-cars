@@ -1,0 +1,37 @@
+.significance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+}
+
+.significance__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.significance__text {
+  margin: 0 auto;
+  max-width: 580px;
+  margin-bottom: 50px;
+}
+
+.significance__row {
+  display: flex;
+  gap: 40px;
+}
+
+.significance__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.significance__item-img {
+  max-width: 270px;
+  max-height: 150px;
+  margin-bottom: 20px;
+}
+
+.significance__item-text {
+  line-height: 130%;
+}
