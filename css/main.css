@@ -148,7 +148,7 @@ a:hover {
   position: relative;
   display: inline-block;
   font-size: 16px;
-  min-width: 430px;
+  max-width: 430px;
   padding: 13px 61px;
   transition: background-color 0.2s ease-in;
   text-transform: uppercase;
@@ -165,16 +165,21 @@ a:hover {
 .btn__lease-cars--accent {
   font-size: 36px;
 }
+.btn__lease-cars--small {
+  max-width: 223px;
+}
 
 .title {
   font-size: 48px;
   font-weight: 700;
 }
+.title--h3 {
+  font-size: 24px;
+}
 
 .header {
   position: relative;
   background-color: #151515;
-  padding-bottom: 100px;
 }
 .header--main {
   padding-bottom: 150px;
@@ -185,6 +190,7 @@ a:hover {
   z-index: 9;
   right: 0;
   left: 0;
+  padding: 40px 0px 152px 0px;
 }
 .header--main .header__main {
   position: absolute;
@@ -195,7 +201,7 @@ a:hover {
 }
 
 .header__top {
-  padding: 40px 0px 152px 0px;
+  padding: 40px 0px;
 }
 
 .header__row {
@@ -499,4 +505,80 @@ a:hover {
 
 .significance__item-text {
   line-height: 130%;
+}
+
+.car-card {
+  max-width: 270px;
+  border: 1px solid #0066ff;
+}
+
+.car-card__img {
+  margin-bottom: 20px;
+  max-height: 170px;
+}
+
+.car-card__title {
+  margin-bottom: 20px;
+}
+
+.car-card__text {
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+
+.car-card__price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.car-card__details {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: #0066ff;
+  width: 100%;
+  border-top: 1px solid #0066ff;
+  transition: all 0.2s ease-in;
+}
+.car-card__details:hover,
+.car-card__details :focus {
+  background-color: #0066ff;
+  color: #ffffff;
+}
+.car-card__details:active {
+  top: 1px;
+  filter: saturate(1.5);
+}
+
+.cars {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.cars__title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cars__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  gap: 80px;
+  margin-bottom: 100px;
+}
+
+.cars__list-link {
+  color: #151515;
+}
+
+.cars__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 100px 40px;
+  margin-bottom: 70px;
 }/*# sourceMappingURL=main.css.map */
