@@ -1,0 +1,13 @@
+@import "./news-card";
+
+.news {
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.news__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding-bottom: 70px;
+}

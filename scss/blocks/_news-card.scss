@@ -1,0 +1,32 @@
+.news-card {
+  max-width: 580px;
+}
+
+.news-card__img {
+  margin-bottom: 30px;
+}
+
+.news-card__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-card__title {
+  max-width: 446px;
+}
+
+.bews-card__btn {
+  position: relative;
+  padding: 4px 21px;
+  transition: background-color 0.2s ease-in;
+  background-color: $blue;
+
+  &:hover,
+  :focus {
+    filter: saturate(1.5);
+  }
+
+  &:active {
+    top: 1px;
+  }
+}

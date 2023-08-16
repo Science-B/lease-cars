@@ -4,7 +4,9 @@
 @import "./base/mixins";
 @import "./base/base";
 
-// Blocks
+//// Blocks
+
+// Main-page
 @import "./blocks/header";
 @import "./blocks/menu";
 @import "./blocks/footer";
@@ -14,4 +16,10 @@
 @import "./blocks/leasing";
 @import "./blocks/video";
 @import "./blocks/significance";
+
+// New-cars-page
 @import "./blocks/cars";
+
+// Contact-us-page
+@import "./blocks/contacts";
+@import "./blocks/news";
