@@ -44,11 +44,12 @@ a {
   position: relative;
   display: inline-block;
   font-size: 16px;
-  min-width: 430px;
+  max-width: 430px;
   padding: 13px 61px;
   transition: background-color 0.2s ease-in;
   text-transform: uppercase;
   background-color: $black;
+
   &:hover,
   :focus {
     background-color: $blue;
@@ -62,9 +63,17 @@ a {
   &--accent {
     font-size: 36px;
   }
+
+  &--small {
+    max-width: 223px;
+  }
 }
 
 .title {
   font-size: 48px;
   font-weight: 700;
+
+  &--h3 {
+    font-size: 24px;
+  }
 }

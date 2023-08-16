@@ -1,0 +1,41 @@
+.car-card {
+  max-width: 270px;
+  border: 1px solid $blue;
+}
+.car-card__img {
+  margin-bottom: 20px;
+  max-height: 170px;
+}
+.car-card__title {
+  margin-bottom: 20px;
+}
+.car-card__text {
+  line-height: 130%;
+  margin-bottom: 20px;
+}
+.car-card__price {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.car-card__details {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  color: $blue;
+  width: 100%;
+  border-top: 1px solid $blue;
+  transition: all 0.2s ease-in;
+
+  &:hover,
+  :focus {
+    background-color: $blue;
+    color: $white;
+  }
+
+  &:active {
+    top: 1px;
+    filter: saturate(1.5);
+  }
+}
