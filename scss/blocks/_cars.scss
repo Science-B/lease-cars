@@ -21,13 +21,26 @@
   margin-bottom: 100px;
 }
 
-.cars__list-link {
+.cars__list-btn {
+  font-size: 24px;
+  font-weight: 700;
   color: $black;
+
+  &--active {
+    color: $blue;
+  }
 }
 
 .cars__content {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 100px 40px;
-  margin-bottom: 70px;
+}
+
+.cars__content-item {
+  display: none;
+
+  &--active {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px 40px;
+    margin-bottom: 70px;
+  }
 }
