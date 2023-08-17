@@ -7,4 +7,10 @@
 }
 
 .menu__list-item {
+  &--active {
+    a {
+      font-weight: 700;
+      color: $blue;
+    }
+  }
 }

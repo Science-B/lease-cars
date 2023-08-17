@@ -236,6 +236,11 @@ a:hover {
   gap: 35px;
 }
 
+.menu__list-item--active a {
+  font-weight: 700;
+  color: #0066ff;
+}
+
 .footer {
   padding: 50px 0px 15px 0px;
   background-color: #151515;
@@ -581,11 +586,19 @@ a:hover {
   margin-bottom: 100px;
 }
 
-.cars__list-link {
+.cars__list-btn {
+  font-size: 24px;
+  font-weight: 700;
   color: #151515;
 }
+.cars__list-btn--active {
+  color: #0066ff;
+}
 
-.cars__content {
+.cars__content-item {
+  display: none;
+}
+.cars__content-item--active {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 100px 40px;
