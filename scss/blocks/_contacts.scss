@@ -1,6 +1,11 @@
 .contacts {
   padding-top: 100px;
   padding-bottom: 150px;
+
+  @include mediaTablet {
+    padding-top: 50px;
+    padding-bottom: 75px;
+  }
 }
 
 .contacts__title {
@@ -22,12 +27,20 @@
   gap: 50px 40px;
   margin: 0 auto;
   max-width: 580px;
+
+  @media screen and (max-width: 593px) {
+    justify-content: center;
+  }
 }
 
 .contacts__form-input {
   padding: 18px 20px;
 
   border: 1px solid $blue;
+
+  @media screen and (max-width: 593px) {
+    width: 100%;
+  }
 }
 
 .contacts__form-textarea {
