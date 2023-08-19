@@ -1,5 +1,9 @@
 .leasing {
   padding-bottom: 150px;
+
+  @include mediaTablet {
+    padding-bottom: 40px;
+  }
 }
 
 .leasing__wrapper {
@@ -15,6 +19,10 @@
 .leasing__text {
   line-height: 130%;
   margin-bottom: 50px;
+
+  @include mediaPhoneLG {
+    font-size: 14px;
+  }
 }
 
 .leasing__rules {
@@ -40,6 +48,22 @@
   justify-content: center;
   align-items: center;
   gap: 140px;
+
+  @include mediaTablet {
+    gap: 100px;
+  }
+
+  @include mediaPhoneLG {
+    gap: 40px;
+  }
+
+  @include mediaPhoneMD {
+    gap: 20px;
+  }
+
+  // @media screen and (max-width: 350px) {
+  //   flex-direction: column;
+  // }
 }
 
 .leasing__rule-number {
@@ -54,8 +78,26 @@
   font-weight: 700;
   background-color: $blue;
   color: $white;
+
+  @include mediaPhoneLG {
+    font-size: 32px;
+    max-width: 60px;
+    width: 100%;
+    height: 60px;
+  }
+
+  @include mediaPhoneXS {
+    font-size: 20px;
+    max-width: 40px;
+    width: 100%;
+    height: 40px;
+  }
 }
 
 .leasing__rule-text {
   line-height: 130%;
+
+  @include mediaPhoneLG {
+    font-size: 14px;
+  }
 }

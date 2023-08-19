@@ -3,6 +3,10 @@
   justify-content: center;
   align-items: center;
   padding-bottom: 150px;
+
+  @include mediaTablet {
+    padding-bottom: 75px;
+  }
 }
 
 .video__title {

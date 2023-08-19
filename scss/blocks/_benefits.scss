@@ -1,5 +1,9 @@
 .benefits {
   padding-bottom: 150px;
+
+  @include mediaTablet {
+    padding-bottom: 75px;
+  }
 }
 .benefits__title {
   text-align: center;
@@ -7,9 +11,15 @@
 }
 
 .benefits__row {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+
+  @include mediaTablet {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    place-items: center;
+    gap: 30px;
+  }
 }
 
 .benefits__item {
@@ -23,14 +33,21 @@
   width: 150px;
   height: 150px;
   margin-bottom: 30px;
+
+  @include mediaPhoneMD {
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .benefits__item-title {
-  font-size: 24px;
-  font-weight: 700;
   margin-bottom: 30px;
 }
 
 .benefits__item-text {
   line-height: 130%;
+
+  @include mediaPhoneLG {
+    font-size: 14px;
+  }
 }
