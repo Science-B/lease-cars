@@ -804,13 +804,19 @@ a:hover {
 }
 
 .cars__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   font-size: 24px;
   font-weight: 700;
-  gap: 80px;
   margin-bottom: 100px;
+  gap: 40px;
+}
+@media screen and (max-width: 904px) {
+  .cars__list {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 20px;
+    margin-bottom: 50px;
+  }
 }
 
 .cars__list-btn {
@@ -821,6 +827,11 @@ a:hover {
 .cars__list-btn--active {
   color: #0066ff;
 }
+@media screen and (max-width: 904px) {
+  .cars__list-btn {
+    font-size: 20px;
+  }
+}
 
 .cars__content-item {
   display: none;
@@ -830,6 +841,13 @@ a:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 100px 40px;
   margin-bottom: 70px;
+}
+@media screen and (max-width: 904px) {
+  .cars__content-item--active {
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 50px 40px;
+    place-items: center;
+  }
 }
 
 .contacts {
