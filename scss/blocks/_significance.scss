@@ -1,8 +1,9 @@
 .significance {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding-bottom: 150px;
+
+  @include mediaTablet {
+    padding-bottom: 75px;
+  }
 }
 
 .significance__title {
@@ -14,11 +15,20 @@
   margin: 0 auto;
   max-width: 580px;
   margin-bottom: 50px;
+
+  @include mediaPhoneLG {
+    font-size: 14px;
+  }
 }
 
 .significance__row {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
+
+  @include mediaTablet {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
 }
 
 .significance__item {
@@ -27,11 +37,13 @@
 }
 
 .significance__item-img {
-  max-width: 270px;
-  max-height: 150px;
   margin-bottom: 20px;
 }
 
 .significance__item-text {
   line-height: 130%;
+
+  @include mediaPhoneLG {
+    font-size: 14px;
+  }
 }

@@ -6,6 +6,10 @@
     padding-bottom: 150px;
     background-color: transparent;
 
+    @include mediaTablet {
+      padding-bottom: 75px;
+    }
+
     .header__top {
       position: absolute;
       z-index: 9;
@@ -31,6 +35,10 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+
+  @include mediaTablet {
+    align-items: center;
+  }
 }
 
 .header__main {
@@ -42,4 +50,8 @@
   font-weight: 700;
   color: $white;
   padding-bottom: 50px;
+
+  @include mediaTablet {
+    font-size: 56px;
+  }
 }

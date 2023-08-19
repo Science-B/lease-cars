@@ -27,6 +27,30 @@
   background-color: $black;
   border-radius: 0;
   opacity: 1;
+
+  @include mediaTablet {
+    width: 100px;
+    height: 2px;
+  }
+
+  @media screen and (max-width: 470px) {
+    width: 80px;
+    height: 2px;
+  }
+
+  @include mediaPhoneLG {
+    width: 70px;
+    height: 2px;
+  }
+
+  @include mediaPhoneMD {
+    width: 60px;
+    height: 2px;
+  }
+
+  @include mediaPhoneXS {
+    // display: none;
+  }
 }
 
 .swiper-pagination-horizontal {
@@ -46,4 +70,8 @@
 .swiper-pagination-bullet-active {
   height: 6px;
   background-color: $white;
+
+  @include mediaTablet {
+    height: 4px;
+  }
 }

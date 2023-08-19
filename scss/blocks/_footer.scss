@@ -5,10 +5,15 @@
 }
 
 .footer__menu {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   margin-bottom: 50px;
+
+  @include mediaTablet {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  }
 }
 
 .footer__menu-list {
@@ -28,7 +33,6 @@
 .footer__apps {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 50px;
 }
 
@@ -57,4 +61,6 @@
 }
 
 .footer__privacy-item {
+  text-align: center;
+  font-size: 14px;
 }

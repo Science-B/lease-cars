@@ -62,19 +62,51 @@ a {
 
   &--accent {
     font-size: 36px;
+
+    @include mediaTablet {
+      font-size: 32px;
+    }
+
+    @include mediaPhoneLG {
+      font-size: 28px;
+    }
   }
 
   &--small {
     max-width: 223px;
   }
+
+  @include mediaTablet {
+    padding: 13px 48px;
+  }
 }
 
 .title {
-  font-size: 48px;
   font-weight: 700;
+  font-size: 48px;
+
+  @include mediaTablet {
+    font-size: 42px;
+  }
+
+  @include mediaPhoneLG {
+    font-size: 38px;
+  }
+
+  @include mediaPhoneMD {
+    font-size: 34px;
+  }
+
+  @include mediaPhoneSM {
+    font-size: 30px;
+  }
 
   &--h3 {
     font-size: 24px;
+
+    @include mediaPhoneLG {
+      font-size: 20px;
+    }
   }
 }
 
@@ -87,4 +119,8 @@ a {
   overflow: hidden;
   border: 0;
   clip: rect(0 0 0 0);
+}
+
+.no-scroll {
+  overflow-y: hidden;
 }
